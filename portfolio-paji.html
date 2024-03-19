@@ -1,0 +1,604 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+.nav-flex-row {
+    position: fixed; /* Add this line */
+    top: 0; /* Adjust this according to your design */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 100; /* Ensure it's above other content */
+    width: 100%;
+    padding: 0;
+}
+
+
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+        @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+       
+        #projects {
+            background-image: url('https://wallpapercave.com/wp/wp7264147.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px 0;
+        }
+
+ #about {
+            background-image: url('https://i.pinimg.com/736x/fd/7c/b2/fd7cb212535d1208de1b870f8c0faa87--astronauts-mermaids.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px 0;
+}
+#achievements {
+    background-image: url('https://marketplace.canva.com/EAFCytpuJ08/1/0/1600w/canva-green-wateroclor-leaf-linktree-background-0Mp0WYk6_8E.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.heading{
+font-size: 3.5rem;
+  margin: 45px 0px;
+  text-align: center;
+  color: red;
+}
+#Contact {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px, 0px;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 30%;
+  padding: 12px;
+  margin: 15px;
+}
+
+#message {
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+#send {
+  padding: 5px 10%;
+  border: 2px solid #cedd36;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.7 ease;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  width: 10%;
+  margin: 30px;
+  outline: none;
+  cursor: alias;
+}
+#send:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #cedd36;
+  box-shadow: 0 0 10px white;
+  font-weight: bold;
+}
+.navbar ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Home {
+  height: 720px;
+}
+
+.heading {
+  font-size: 1.7rem;
+}
+
+.image img {
+  align-items: center;
+  width: 300px;
+  height: 175px;
+}
+#intro h2 {
+  font-size: 0.15rem;
+}
+.design img {
+  width: 250px;
+  height: 150px;
+}
+.input {
+  width: 80px;
+}
+#message {
+  width: 400px;
+}
+#send {
+  width: 20%;
+}
+.main {
+  margin-left: 175px;
+}
+.heading {
+  font-size: 2.3rem;
+}
+.image {
+  flex-direction: column;
+  text-align: center;
+}
+.image img {
+  width: 475px;
+  height: 300px;
+}
+#intro h2 {
+  padding: 10px;
+  text-align: center;
+}
+.input {
+  width: 60%;
+}
+#message {
+  width: 60%;
+}
+#send {
+  width: 20%;
+}
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+</style>
+    <title>Tanya singh</title>
+</head>
+<body>
+    <!--Header(start)-->
+
+
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+    
+        <tr>
+            <td align="center" valign="middle">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <font face="Comic sans MS" size="6" color=#9fe7f5>
+                              <b >weird_writer2k1</b>
+                            </font>
+                        </td>
+                        <td width="15%"></td>
+                        <td>
+                            <a href="#home" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=#C1E8FF>Home</font>
+                            </a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#about" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=#C1E8FF>About</font>
+                            </a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#projects" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=#C1E8FF>Projects</font>
+                            </a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#achievements" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=#C1E8FF>Achievements</font>
+                            </a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#contact" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=#C1E8FF>Contact</font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Header(end)-->
+    
+    <!--Home(start)-->
+    <table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" bgcolor="lightblue">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="Times New Roman" size="8" color="black">MY PORTFOLIO !</font>
+                            </h3>
+                            <h2><font face="Verdana" size="6" color="#4CAF50"></font></h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Home(end)-->
+    
+    <!--About(start)--><table id="about" border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                <tr>
+                    <td height="180" align="center" valign="middle" colspan="2">
+                        <font face="Verdana" size="7" color="black">About Me</font>
+                        <hr color="black" width="90">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/028/597/534/small/young-cartoon-female-avatar-student-character-wearing-eyeglasses-file-no-background-ai-generated-png.png">
+                    </td>
+                    <td width="60%">
+                        <font face="Verdana" size="4" color="black">
+                            Thanks for your interest, here is a quick story of me.
+                            <hr color="04d0d9">
+                            "Hi"! I'm Simarjeet singh, a 12th-grade graduate currently pursuing my Bachelor's in Computer Applications (BCA).
+                            <hr color="04d0d9">
+                            I do my work mainly in C-Language, HTML and CSS are my stronger sections. Besides these, I have good communication skills and Leadership quality.
+                            <hr color="04d0d9">
+                            This website is basically one of my Web Development projects which is built using HTML, CSS only. Here one can also find ideas for projects in different languages. Thanks again for reading this, because of people like you, it exists and prospers!
+                            <hr color="04d0d9">
+                            Cheers,
+                            <br>
+                            <b>weird_writer2k1</b>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <hr color="04d0d9">
+            <hr color="04d0d9">
+            <hr color="04d0d9">
+        </td>
+    </tr>
+</table>
+ <table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="04d0d9">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle">
+                            <font face="Verdana" size="7" color="black">Achievements</font>
+                            <hr color="black" width="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font face="Verdana" size="4" color="black">
+                                <ul>
+                                    <li><b>Front-end Developer</b>
+                                        <ul>
+                                            <li>this website</li>
+                                            <li>__________</li>
+<li>Developed websites using HTML or CSS</li>
+<li>Learning PHP</li>
+                                        </ul>
+                                    </li>
+                                    <li><hr color="04d0d9"><b>Programmer</b>
+                                        <ul>
+                                            <li>Good in coding languages</li>
+                                            <li>___________________</li>
+                                            <li>I have 3 star in Hacker Rank in c-language
+and have 2 star in Hacker Rank in c++</li>
+                                            <li>Contributed to team projects as developer</li>
+                                            <hr color="04d0d9"><hr color="04d0d9"><hr color="04d0d9">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+     
+    <!--Achievements(start)-->
+    <table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                <tr>
+                    <td height="180" align="center" valign="middle" colspan="2">
+                        <font face="Verdana" size="7" color="black">Projects</font>
+                        <hr color="black" width="90">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10">
+                        <font face="Times New Roman" size="5" color="black">
+                            <ul>
+                                <li>xyz........<a href="#" style="text-decoration:none">➲</a></li>
+                                <li><hr color="#c2c0c3">xyz.......<a href="#" style="text-decoration:none"> ➲</a></li>
+                                <li><hr color="#c2c0c3">xyz.......<a href="#" style="text-decoration:none">➲</a></li>
+                                <li><hr color="#c2c0c3">xyz....... <a href="#" style="text-decoration:none"> ➲</a></li>
+                                <li><hr color="#c2c0c3">xyz....... <a href="#" style="text-decoration:none">➲</a></li>
+                            </ul>
+                            <hr color="#c2c0c3">
+                            <hr color="#c2c0c3">
+                        </font>
+                    </td>
+                    <td width="45%">
+                        <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/02/What-is-a-Project-1-scaled.jpg" alt="Project" width="75%">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+    <!--Achievements(end)-->
+    
+    <!--Contact(start)-->
+    <section id="Contact">
+<h1 class="heading">Contact us</h1>
+      <form action="" class="form-control">
+        <input
+          type="text"
+          name="input"
+          required
+          placeholder="Enter Your Name Here" />
+        <input
+          type="email"
+          name="input"
+          required
+          placeholder="Enter Your Email Here"/>
+        <textarea name="textarea" id="message" ></textarea>
+        <input type="submit" value="send" id="send" />
+      </form>
+    </section>
+    
+    <!--Footer(start)-->
+    <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="04d0d9">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="13%" valign="top"><b>HackerRank     </b><a href="#" style="text-decoration:none">➲ </a></td>
+                        <td>|</td>
+                        <td width="13%" valign="top"><b>Instagram</b><a href="#">➲</a></td>
+                        <td>|</td>
+                        <td width="13%" valign="top"><b>Email</b><a href="#" style="text-decoration:none" >➲</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana" color="white" size="5">weird_writer2k1 !</font>
+                        </td>
+                        <td width="10%">
+                            <font face="arial" color="black" size="5">
+                                <a href="#header" style="text-decoration:none">
+                                    <font face="Verdana" color="white" size="6">
+                                        <b>TOP</b>
+                                    </font>
+                                </a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer(end)-->
+</body>
+</html>
